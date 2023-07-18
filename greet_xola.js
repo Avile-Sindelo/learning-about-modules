@@ -1,8 +1,13 @@
 import chalk from 'chalk';
 import greet from './greet.js';
 import figlet from 'figlet';
-//var figlet = require("figlet");
 
+//      chalk
+const styledMessage = chalk.bgGreen.black(greet("Xola"));
+console.log(styledMessage);
+
+
+//      Figlet
 figlet(greet("Avile"), {
     horizontalLayout: "fitted"
     },
@@ -14,4 +19,5 @@ figlet(greet("Avile"), {
     }
     console.log(data);
 });
-//console.log(styledMessage);
+
+
